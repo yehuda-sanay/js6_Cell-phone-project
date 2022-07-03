@@ -13,45 +13,87 @@
   } 
 .header{
     grid-area: header;
-    background-color: aqua;
-    height: 15vh;
+    background-color: rgb(6, 7, 7);
+    height: 10vh;
+    display: flex;
   }
+  .topnav {
+    display: flex;
+      overflow: hidden;
+      background-color: #333;
+      left: 200px;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      width: 22.3vw;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
 .sidebar{
     grid-area: sidebar;
     height: 70vh;
-    width: 30vw;
-    background-color: blue;
+    width: 22.3vw;
+    background-color: rgb(13, 13, 14);
 }
 .main{
     grid-area: main;
-    height: 70vh;
-    background-color: brown;
+    width: 77vw;
+    background-color: rgb(216, 18, 18);
+    display: flex;
+    flex-direction: row;
+   
+  
 }
+#phones_cards{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+ border: 2px solid black;
+ width: 15vw;
+ height: 20vh;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ text-align: center;
+ min-width: 200px;
+}
+
 .footer{
     grid-area: footer;
     height:15vh;
-    background-color: blueviolet;
-}
-.topnav {
-    overflow: hidden;
     background-color: #333;
-  }
+    display: flex;
+  justify-content: space-around;
+    
+    
+}
+.fac{
+  width: 15vw;
+  height: 15vh;
+}
+.git{
+  width: 15vw;
+  height: 15vh;
+}
+.linke{
+  width: 15vw;
+  height: 15vh;
   
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+}
